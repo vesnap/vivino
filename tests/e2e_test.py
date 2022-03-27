@@ -30,6 +30,11 @@ def test(browser, keyword):
     search_page=SearchResults(browser,base_url)
     product_list=search_page.get_products()
     products = search_page.parse_products(product_list)
+    for product in products:
+        if (keyword in product['winery'] or keyword in product["region"]):
+            print("product " + product['winery']+" has keyword")
+        else:
+            print("product " + product['winery'] + " doesn't have keyword")
     i = random.choice(range(len(product_list)))
     search_page.click_on_product(product_list[i])
     product_page=Product(browser, base_url)
@@ -39,7 +44,10 @@ def test(browser, keyword):
     assert product["product_winery"] in products[i]['winery']
     assert product["product_name"] in products[i]['winery']
     assert keyword in products[i]['winery']
-    assert keyword in product['product_name']
+    if keyword in product['product_name']:
+        print("product " +product['product_name'] + " has keyword")
+    else:
+        print("product " + product['product_name'] + " doesn't have keyword")
 
 
 
