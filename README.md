@@ -1,9 +1,9 @@
 # Vivino assignement
 
 
-Test that validate search feature on [Vivno website](https://www.vivino.com/).
+Test that validate search feature on [Vivino website](https://www.vivino.com/).
 
-1. Start a browser and navigate to [Vivno website](https://www.vivino.com/)
+1. Start a browser and navigate to [Vivino website](https://www.vivino.com/)
 
 2. Enter `<keyword>` into the search input and submit it by clicking on the search button
 
