@@ -1,0 +1,33 @@
+Start a browser and navigate to <a href="https://www.vivino.com/" rel="noopener noreferrer" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.vivino.com/&source=gmail&ust=1648122852393000&usg=AOvVaw1CEy4Oix6hSm4A5vueHIUh">https://www.vivino.com</a>
+
+    2. Enter `<keyword>` into the search input and submit it by clicking on the search button
+
+    3. Parse the 1st page with search results: store info given on the 1st page of search results as structured data of any chosen by your type.
+
+    4. Make sure at least one attribute (title, country, etc) of each item (found wine) from parsed search results contains `<keyword>` Log in stdout which wine and attributes contain `<keyword>` and which do not.
+
+    5. Click on random wine's title
+
+    6. Collect info from the wine page
+
+    7. Check that each attribute value is equal to one of those stored in the structure created in step #3
+
+    8. Check whether at least one attribute contains `<keyword>` and log which one
+
+
+
+    Requirements:
+
+
+
+    - `<keyword>` should be configurable. The test should run with any combination of them
+
+    - Imagine that this is not such a simple tiny task, but a big scalable project which can be extended. Hence, implement an appropriate OOP model/approach.
+
+    - Page Object Pattern should be applied.
+
+    - Prove model/approach chosen.
+
+    - Your code should be well commented, so anybody can easily find out what action is being performed there and what is the purpose of those code blocks/methods/etc.
+
+    - Post your solution on Github
