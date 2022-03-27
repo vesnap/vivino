@@ -2,6 +2,7 @@ from selenium.webdriver import Keys
 from tests.utils.locators import *
 from tests.pages.page import Page
 
+#Homepage is page used for performing the search
 class Homepage(Page):
     instance = None
 

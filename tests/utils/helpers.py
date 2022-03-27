@@ -1,6 +1,7 @@
 import json
 from selenium.webdriver.common.by import By
-
+#util/helper module with different functions that are reused in the framework, it can be further refactored
+#in the future in separate files related to different uses
 def get_all_children(element):
     return element.find_elements(By.CSS_SELECTOR,"*")
 

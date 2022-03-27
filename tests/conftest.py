@@ -1,3 +1,4 @@
+#Here we have functions that enable configuration of test run, if keyword isn't provided default is used
 def pytest_addoption(parser):
     parser.addoption("--keyword", action="store", default="Malvazija")
 

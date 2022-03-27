@@ -5,17 +5,8 @@ from tests.pages.product import Product
 from tests.pages.search_results import SearchResults
 import pytest
 from tests.utils import helpers
-
-
-# @pytest.fixture()
-# def setUp(request):
-#     base_url = helpers.load_setting()['url']
-#     driver = webdriver.Chrome()
-#     request.cls.driver = driver
-#     request.cls.base_url = base_url
-#     yield
-#     driver.quit()
-
+#e2e test , we use fixture to setup the test, browser or driver is shared in the test, and all Page classes have driver
+#attribute
 
 @pytest.fixture
 def browser():

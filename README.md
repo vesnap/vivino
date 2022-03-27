@@ -45,3 +45,4 @@ Test that validate search feature on [Vivno website](https://www.vivino.com/).
 ```
 ## About solution
 Page Object Model is used in order to reduce code duplication and improves test maintenance. Locators module for elemen selectors is used to separate page logic and page eleents, and again to improve code mainianance and reusability. Tests are configurable and we can chose browser, base_url and test input (keyword).
+There is a sandbox file in which you can perform investigation prior to writing test.

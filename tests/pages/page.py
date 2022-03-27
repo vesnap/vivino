@@ -2,10 +2,9 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from tests.utils import helpers
 
+#Page class is base class that has most common methods that are used for page manipulation
 class Page:
-    instance = None
 
     def __init__(self,driver,base_url):
         self.driver = driver

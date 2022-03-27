@@ -1,8 +1,9 @@
 import random
 from tests.utils.locators import *
 from selenium.webdriver.common.by import By
-
 from tests.pages.page import Page
+
+#Search page class is used fot maninupaling a page with results
 
 class SearchResults(Page):
     instance = None
@@ -14,6 +15,7 @@ class SearchResults(Page):
     def get_products(self):
         return self.find_elements(*self.locator.PRODUCTS)
 
+    #function for parsing results is added to extract the main data and create a list of objects
     def parse_products(self, product_list):
         products = []
         for product in product_list:

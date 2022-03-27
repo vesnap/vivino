@@ -2,6 +2,8 @@
 from tests.pages.page import Page
 from tests.utils.helpers import *
 from tests.utils.locators import *
+
+#Product page class is used fot maninupaling a page that displayes a single product
 class Product(Page):
     def __init__(self,driver,base_url):
         self.locator = ProductPageLocators
@@ -9,6 +11,8 @@ class Product(Page):
 
     def get_image_href(self):
         return self.driver.find_element(*self.locator.IMAGE).get_attribute("src")
+
+    # Here implicit wait is used for displaying header
     def get_winery(self):
         self.driver.implicitly_wait(1000)
         return get_all_children(self.driver.find_element(*self.locator.HEADING))[1].text
